@@ -34,7 +34,7 @@ outliers <- function(x, s, e){
   print("Rows with outliers:")
   print(x %>% filter(outliers_numb > 0))
   
-  return(x)
+  return(invisible(x))
 }
 
 
